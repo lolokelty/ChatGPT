@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <!-- <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', e => {
+        cursor.setAttribute("style", "top:"+(e.pageY -10)+"px; left: "+e.pageX+"px; ")
+        })
+        document.addEventListener('click', () => {
+        cursor.classList.add("expand");
+        
+        setTimeout(() => {
+            cursor.classList.remove("expand");
+        }, 500)
+        })
+    </script> -->
+
+    <form class="box" actoin="login.html" method="post">
+<h1>
+Login Into "CHATGPT"
+</h1>
+
+<input type="text" 
+        name="" 
+        placeholder="Enter Username" 
+        id="username">
+
+<input type="password" 
+        name="" 
+        placeholder="Enter password" 
+        id="password">
+
+<input type="submit" 
+        name="" 
+        value="login"
+        onclick= "auth()"/>
+
+</form>
+<div>
+<!-- login functionality that takes in username/password and sends me to the app  -->
+    <script>
+        function auth(){
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            if(username== "admin" && password=="admin22"){
+                window.location.assign("http://localhost:5173");
+                alert("Access Granted");
+            } else {
+                alert("Access Denied");
+                return;
+            }
+        }
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Know it all bot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+<script>
+  const cursor = document.querySelector('.cursor');
+  document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top:"+(e.pageY -10)+"px; left: "+e.pageX+"px; ")
+  })
+  document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+      cursor.classList.remove("expand");
+    }, 500)
+  })
+</script>
+
+    <div id="app">
+      <div id="chat_container"></div>
+
+      <form>
+        <textarea name="prompt" rows="1" cols="1" placeholder="Ask My know it all bot something..."></textarea>
+        <button type="submit"><img src="assets/send.svg" alt="send" />
+      </form>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

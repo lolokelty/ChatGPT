@@ -1,0 +1,129 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: url(https://i.pinimg.com/originals/b2/b0/2f/b2b02f3b94075334edb07f8e6f8c0d11.gif);
+    background-size:cover;
+}
+
+.box{
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.box input[type="text"], .box input[type="password"]
+
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0367fd;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:focus{
+
+    width:270px;
+    border-color: #ffc400ec;
+
+}
+
+.box input[type="submit"]{
+
+
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #ffc400ec;
+    padding:14px 35px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+    background: rgba(27, 27, 27);
+}
+
+/* .cursor{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+}
+
+.cursor::after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    position:absolute;
+    border: 8px solid grey;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+
+}
+
+@keyframes cursorAnim2 {
+    from {
+    transform: scale(1);
+    }
+    to {
+    transform: scale(.4)
+    }
+}
+
+@keyframes cursorAnim {
+    from {
+    transform: scale(1);
+    }
+    to {
+    transform: scale(.7)
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(3)
+    }
+    100% {
+    transform: scale(1);
+    opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+} */
+
+.box input[type="submit"]:hover{
+    background: #ffc400ec;
+}
